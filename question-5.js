@@ -2,6 +2,11 @@
 
 function calculateTotalPrice() {
   // เริ่มเขียนโค้ดตรงนี้
+  let totalPrice = 0;
+  for (let item of cart) {
+    totalPrice += item.price * item.quantity;
+  }
+  return totalPrice;
 }
 
 // ตัวอย่างการใช้งาน
